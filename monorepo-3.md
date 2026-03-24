@@ -776,14 +776,14 @@ createRoot(document.getElementById('root')!).render(
 
 # 7. Konfigurasi CORS Cookie di Vite
 
-Edit `apps/frontend/vite.config.ts` — pastikan proxy sudah ada (dari Phase 1) dan tambahkan `credentials` jika perlu:
+Edit `apps/frontend/vite.config.ts` — pastikan proxy sudah ada (dari Phase 1):
 
 ```ts
 server: {
   port: 5173,
   strictPort: true,
   proxy: {
-    "/api": { target: "http://localhost:3000", changeOrigin: true, credentials: true },
+    "/api": { target: "http://localhost:3000", changeOrigin: true },
   },
 },
 ```
