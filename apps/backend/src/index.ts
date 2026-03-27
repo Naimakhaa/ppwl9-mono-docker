@@ -30,6 +30,7 @@ const app = new Elysia()
       origin: [process.env.FRONTEND_URL ?? "", process.env.TEST_URL ?? ""],
     }),
   )
+
   .onRequest(({ request, set }) => {
     const origin = request.headers.get("origin");
     const frontendUrl = process.env.FRONTEND_URL ?? "";
