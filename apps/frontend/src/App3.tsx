@@ -234,7 +234,7 @@ export default function App() {
   }
 
   const handleLogin = () => {
-    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/auth`
+    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/auth/login`
   }
 
   const handleLogout = async () => {
