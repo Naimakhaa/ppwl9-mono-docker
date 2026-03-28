@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-    "start": "bun dist/index.mjs",
+    "start":"bun --env-file=.env --env-file=.env.production dist/index.mjs",
     "build": "prisma generate && tsdown",
     "postinstall": "prisma generate",
     "prod:sql": "bunx prisma migrate diff --from-empty --to-schema prisma/schema.prisma --script > baseline.sql",
