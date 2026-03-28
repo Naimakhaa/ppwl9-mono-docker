@@ -21,6 +21,7 @@ const app = new Elysia()
     })
   )
 
+
   // !!! tambahkan onRequest ini untuk beri pengamanan API_KEY data `/users`
   .onRequest(({ request, set }) => {
     const url = new URL(request.url);
