@@ -15,7 +15,7 @@ const app = new Elysia()
   // !!! modifikasi CORS agar dapat di akses oleh web frontend deployment https
   .use(
     cors({
-      origin: process.env.FRONTEND_URL || "http://localhost:5173",
+      origin: [process.env.FRONTEND_URL || "http://localhost:5173", "http://localhost:4173"],
       credentials: true, // WAJIB untuk /auth/me yang mengecek session/cookie
       allowedHeaders: ["Content-Type", "Authorization"]
     })
