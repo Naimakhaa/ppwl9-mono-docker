@@ -2,6 +2,7 @@
   "name": "backend",
   "module": "src/index.ts",
   "private": true,
+  
   "scripts": {
     "dev": "bun run --watch src/index.ts",
     "start": "bun --env-file=.env --env-file=.env.production dist/index.mjs",
