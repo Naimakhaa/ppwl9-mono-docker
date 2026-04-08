@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   const check = env.VITE_CHECK;
   if (!check) throw new Error("env is not detected");
   console.log("Berhasil env:", check)
-
+  
   return {
     build: {
       sourcemap: true
